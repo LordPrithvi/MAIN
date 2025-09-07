@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game & Trade Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .bg-gradient-radial {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-12 border-b border-white border-opacity-20 animate-pulse">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-6" data-aos="fade-down">APPS</h1>
+            <p class="text-xl text-center max-w-2xl mx-auto opacity-90" data-aos="fade-up">Access your favorite games and trading tools with one click</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-aos="fade-up">Games</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-blue-500 rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover" data-aos="fade-right">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <img src="http://static.photos/gaming/200x200/1" alt="PUBG" class="w-8 h-8 rounded-full">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800">PUBG</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Experience the thrill of battle royale with PUBG</p>
+                    <a href="https://lordprithvi.github.io/PUBG" target="_blank" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <span>Play Now</span>
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-green-500 rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover" data-aos="fade-left">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <img src="http://static.photos/gaming/200x200/2" alt="APPEL" class="w-8 h-8 rounded-full">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800">APPEL</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Dive into the world of APPEL gaming</p>
+                    <a href="https://lordprithvi.github.io/APPEL" target="_blank" class="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                        <span>Play Now</span>
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-aos="fade-up">Trading & AI</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-purple-500 rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover" data-aos="fade-right">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <img src="http://static.photos/finance/200x200/3" alt="TRADE" class="w-8 h-8 rounded-full">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800">TRADE</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Access powerful trading tools and analytics</p>
+                    <a href="https://lordprithvi.github.io/TRADE" target="_blank" class="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        <span>Start Trading</span>
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-red-500 rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover" data-aos="fade-left">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <img src="http://static.photos/technology/200x200/4" alt="AI Bot" class="w-8 h-8 rounded-full">
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800">AI Bot</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Interact with our advanced AI assistant</p>
+                    <a href="https://lordprithvi.github.io/AI" target="_blank" class="inline-flex items-center px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">
+                        <span>Try AI Bot</span>
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
